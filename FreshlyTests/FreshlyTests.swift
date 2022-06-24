@@ -9,9 +9,12 @@ import XCTest
 @testable import Freshly
 
 class FreshlyTests: XCTestCase {
+    
+    var freshly: Freshly!
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        freshly = Freshly()
     }
 
     override func tearDownWithError() throws {
@@ -31,6 +34,14 @@ class FreshlyTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testAdd() {
+        XCTAssertEqual(5, freshly.add(a: 3, b: 2))
+    }
+    
+    func testSub() {
+        XCTAssertEqual(1, freshly.sub(a: 5, b: 4))
     }
 
 }

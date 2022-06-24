@@ -16,6 +16,7 @@
 		CF12F1332865B49200EEB2DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF12F1312865B49200EEB2DA /* Main.storyboard */; };
 		CF12F1352865B49200EEB2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF12F1342865B49200EEB2DA /* Assets.xcassets */; };
 		CF12F1382865B49200EEB2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF12F1362865B49200EEB2DA /* LaunchScreen.storyboard */; };
+		CF12F13E2865B60B00EEB2DA /* Freshly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF12F13D2865B60B00EEB2DA /* Freshly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		CF12F1342865B49200EEB2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF12F1372865B49200EEB2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF12F1392865B49200EEB2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF12F13D2865B60B00EEB2DA /* Freshly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freshly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				CF12F1102865B41A00EEB2DA /* Freshly.h */,
+				CF12F13D2865B60B00EEB2DA /* Freshly.swift */,
 			);
 			path = Freshly;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				TargetAttributes = {
 					CF12F10C2865B41A00EEB2DA = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					CF12F1142865B41B00EEB2DA = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -259,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF12F13E2865B60B00EEB2DA /* Freshly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +438,7 @@
 		CF12F1202865B41B00EEB2DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -452,6 +458,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		CF12F1212865B41B00EEB2DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -487,6 +495,7 @@
 		CF12F1232865B41B00EEB2DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -502,6 +511,7 @@
 		CF12F1242865B41B00EEB2DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
